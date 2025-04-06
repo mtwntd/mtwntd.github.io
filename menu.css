@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Estilo general para el header */
 header {
     background-color: #ffffff;
     color: #333;
@@ -28,22 +27,20 @@ header {
     opacity: 1;
 }
 
-/* Estilo del logo */
 header .logo img {
     max-width: 150px;
     height: auto;
 }
 
-/* Estilo del menú de navegación */
 header nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: space-around; /* Los enlaces se distribuyen de manera horizontal */
+    justify-content: space-around;
 }
 
 header nav ul li {
-    margin: 0 15px; /* Espaciado entre los elementos */
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -57,34 +54,30 @@ header nav ul li a:hover {
     color: #ff6f61;
 }
 
-/* Estilo del icono del carrito */
 header .carrito-icono img {
-    width: 30px;
+    width: 45px;
     height: auto;
     transition: transform 0.3s ease;
 }
 
 header .carrito-icono img:hover {
-    transform: scale(1.1); /* Efecto al pasar el cursor */
+    transform: scale(1.1);
 }
 
-/* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-    /* Cambia la visualización del menú de navegación a vertical */
     header nav ul {
         display: block;
         text-align: center;
     }
 
     header nav ul li {
-        margin: 10px 0; /* Espaciado entre los elementos */
+        margin: 10px 0;
     }
 
-    /* Asegurando que el carrito no se mueva */
     header .carrito-icono {
-        right: 20px; /* Alineación a la derecha */
-        top: 50%; /* Centrado verticalmente */
-        transform: translateY(-50%); /* Ajusta para que quede bien centrado */
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         position: absolute;
         top: 25px;
         left: 25px;
@@ -159,7 +152,6 @@ header .carrito-icono img:hover {
     margin-bottom: 20px;
 }
 
-/* Producto */
 .producto {
     display: inline-block;
     width: 30%;
@@ -282,29 +274,24 @@ footer .ubicacion a:hover {
     text-decoration: underline;
 }
 
-/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
-    /* Cambia la visualización del menú de navegación a vertical */
     header nav ul {
         display: block;
         text-align: center;
     }
 
     header nav ul li {
-        margin: 10px 0; /* Espaciado entre los elementos */
+        margin: 10px 0;
     }
 
-    /* Logo más pequeño */
     header .logo img {
         max-width: 120px;
     }
 
-    /* Cambiar el tamaño de fuente en el header */
     header nav ul li a {
         font-size: 16px;
     }
 
-    /* Ajuste de carrito en pantallas pequeñas */
     header .carrito-icono {
         top: 50%;
         transform: translateY(-50%);
@@ -313,7 +300,6 @@ footer .ubicacion a:hover {
         left: auto;
     }
 
-    /* Ajustar el banner */
     #banner h2 {
         font-size: 1.8em;
     }
@@ -331,9 +317,8 @@ footer .ubicacion a:hover {
         font-size: 16px;
     }
 
-    /* Ajuste de productos en móviles */
     .producto {
-        width: 100%; /* Los productos ocupan el 100% del ancho */
+        width: 100%;
         margin: 10px 0;
     }
 

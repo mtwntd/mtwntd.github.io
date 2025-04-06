@@ -12,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Encabezado (donde esta el logo y los botones) */
 header {
     background-color: #ffffff;
     color: #333; 
@@ -159,13 +158,13 @@ header nav ul li a:hover {
 
 #metodo-pago label {
     font-size: 18px;
-    margin-bottom: 5px; /* Agregado para separar la etiqueta del input */
+    margin-bottom: 5px;
     color: #333;
-    display: block; /* Asegura que la etiqueta ocupe todo el ancho y se coloque arriba */
+    display: block;
 }
 
 #metodo-pago input {
-    width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+    width: 100%;
     max-width: 400px;
     padding: 12px;
     margin-bottom: 15px;
@@ -180,13 +179,13 @@ header nav ul li a:hover {
 
 #contacto label {
     font-size: 18px;
-    margin-bottom: 10px; /* Asegura un buen espacio entre la etiqueta y el input */
+    margin-bottom: 10px;
     color: #333;
-    display: block; /* Asegura que la etiqueta esté encima del input */
+    display: block;
 }
 
 #contacto input {
-    width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+    width: 100%;
     max-width: 400px;
     padding: 12px;
     margin-bottom: 15px;

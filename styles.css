@@ -14,7 +14,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1200px; /* Ajusta según el tamaño máximo que deseas para pantallas grandes */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -91,7 +91,7 @@ header nav ul li a:hover {
 }
 
 #banner h2 {
-    font-size: 3em; /* Reduce el tamaño del texto en pantallas pequeñas */
+    font-size: 3em;
     margin-bottom: 25px;
 }
 
@@ -162,7 +162,7 @@ header nav ul li a:hover {
 
 @media (max-width: 768px) {
     .producto {
-        width: 100%; /* Asegura que los productos ocupen todo el ancho en móviles */
+        width: 100%;
         margin: 10px 0;
     }
 }
