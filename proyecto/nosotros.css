@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    color: #333; 
+    padding: 30px 150px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    transition: top 0.3s ease-in-out; 
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+
+header .logo img {
+    max-width: 150px;
+    height: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+#banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+#Historia {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#Historia h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#Historia p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nosotros {
+    padding: 50px 0px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+#nosotros h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.equipo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.miembro img {
+    width: 100%;
+    height: auto;
+    border-radius: 30%;
+    margin-bottom: 15px;
+}
+
+.miembro:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.miembro h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.miembro p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.miembro p1 {
+    font-size: 16px;
+    line-height: 1;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer .redes-sociales {
+    margin-bottom: 15px;
+}
+
+footer .redes-sociales a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .redes-sociales a:hover {
+    color: #ff6f61;
+}
+
+footer .ubicacion a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer .ubicacion a:hover {
+    text-decoration: underline;
+}
