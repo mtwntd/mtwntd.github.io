@@ -18,21 +18,13 @@ body {
     margin: 0 auto;
 }
 
-
 header {
-    background-color: #ffffff;
-    color: #333; 
+    background-color: #fff;
+    color: #333;
     padding: 20px 40px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; 
-    transition: top 0.3s ease-in-out; 
-    opacity: 1;
-    transition: opacity 0.3s ease; 
+    text-align: center;
+    transition: top 0.3s ease-in-out;
 }
 
 header .logo img {
@@ -41,26 +33,10 @@ header .logo img {
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-    header nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-}
-
-
-header nav ul li {
-    margin: 0 15px;
+    padding: 0;
 }
 
 header nav ul li a {
@@ -72,15 +48,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #ff6f61;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 #banner {
@@ -106,40 +73,12 @@ header nav ul li a:hover {
     transition: background-color 0.5s ease;
 }
 
-@media (max-width: 768px) {
-    #banner h2 {
-        font-size: 1.8em;
-        padding: 0 10px;
-    }
-
-    #banner button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
-
 #banner button:hover {
     background-color: #e55b4a;
 }
 
-#bienvenida {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
-}
-
-#bienvenida h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-}
-
-#bienvenida p {
-    font-size: 18px;
-    line-height: 1.6;
-}
 #menu {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 50px 20px;
     text-align: center;
 }
@@ -147,7 +86,6 @@ header nav ul li a:hover {
 #menu h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    animation: fadeIn 2s ease-out;
 }
 
 .producto {
@@ -158,15 +96,8 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-@media (max-width: 768px) {
-    .producto {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
 
 .producto:hover {
     transform: translateY(-10px);
@@ -187,21 +118,6 @@ header nav ul li a:hover {
 .producto p {
     font-size: 16px;
     margin-bottom: 10px;
-}
-
-#menu a button {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.1s ease;
-}
-
-#menu a button:hover {
-    background-color: #e55b4a;
 }
 
 #promociones {
@@ -229,27 +145,6 @@ header nav ul li a:hover {
 
 #promociones p a:hover {
     text-decoration: underline;
-    color: #d04b3e;
-}
-
-#ubicacion {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#ubicacion h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-#ubicacion a {
-    color: #ff6f61;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-#ubicacion a:hover {
-    text-decoration: underline;
 }
 
 footer {
@@ -265,57 +160,8 @@ footer {
 
 footer .redes-sociales a {
     margin: 0 10px;
-}
-
-@media (max-width: 768px) {
-    footer .redes-sociales {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    footer .ubicacion p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        padding: 10px;
-    }
-
-    #menu h2 {
-        font-size: 28px;
-    }
-
-    #promociones h2 {
-        font-size: 28px;
-    }
-
-    #promociones p {
-        font-size: 16px;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
-}
-
-
-footer p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-footer .redes-sociales a {
-    margin: 0 10px;
     color: white;
     text-decoration: none;
-    font-size: 18px;
 }
 
 footer .redes-sociales a:hover {
@@ -331,4 +177,28 @@ footer .ubicacion a {
 
 footer .ubicacion a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #menu h2, #promociones h2 {
+        font-size: 28px;
+    }
+
+    .producto {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

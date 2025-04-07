@@ -12,77 +12,67 @@ body {
     line-height: 1.6;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header {
-    background-color: #ffffff;
-    color: #333; 
-    padding: 0px 0px;
-    position: sticky;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 00;
+    z-index: 100;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; 
-    transition: top 0.3s ease-in-out; 
-    opacity: 1;
-    transition: opacity 0.3s ease; 
+    text-align: center;
 }
 
 header .logo img {
-    max-width: 0px;
+    max-width: 200px;
     height: auto;
+    transition: max-width 0.3s ease;
 }
 
 header nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-    header nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
+    padding: 0;
 }
 
 header nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px;
     transition: color 0.3s ease;
 }
 
-header .logo img {
-    max-width: 200px;
-    height: auto;
+header nav ul li a:hover {
+    color: #ff6f61;
 }
 
 #agradecimiento {
-    padding: 1px 20px;
+    padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
-    margin-top: 5px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
 }
 
 #agradecimiento h2 {
     font-size: 45px;
-    margin-bottom: 20px;
     color: #333;
 }
 
 #agradecimiento p {
-    font-size: 19px;
-    line-height: 1;
-    margin-bottom: 30px;
+    font-size: 18px;
     color: #555;
+    margin-bottom: 30px;
 }
 
 #detalle-compra {
@@ -95,7 +85,6 @@ header .logo img {
 #detalle-compra h3 {
     font-size: 30px;
     color: #333;
-    margin-bottom: 20px;
 }
 
 .producto-detalle p {
@@ -112,7 +101,7 @@ header .logo img {
 }
 
 #boton-regresar {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #boton-regresar button {
@@ -146,10 +135,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-footer .redes-sociales {
-    margin-bottom: 15px;
-}
-
 footer .redes-sociales a {
     margin: 0 10px;
     color: white;
@@ -170,4 +155,14 @@ footer .ubicacion a {
 
 footer .ubicacion a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
 }

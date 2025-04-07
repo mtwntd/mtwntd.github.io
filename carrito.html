@@ -21,7 +21,7 @@
                     <li><a href="menu.html">Menú</a></li>
                     <li><a href="promociones.html">Promociones</a></li>
                     <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="contacto.html">Contactanos</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,22 +30,23 @@
     <section id="carrito">
         <h2>Tu Carrito de Compras</h2>
         <p>A continuación se muestran los productos que has agregado a tu carrito.</p>
+        
         <div class="producto-carrito">
             <h3>Ensalada César</h3>
             <p><strong>$6.500 CLP</strong></p>
-            <button>Eliminar</button>
+            <button aria-label="Eliminar producto" class="eliminar-btn">Eliminar</button>
         </div>
 
         <div class="producto-carrito">
             <h3>Sopa del Día</h3>
             <p><strong>$4.500 CLP</strong></p>
-            <button>Eliminar</button>
+            <button aria-label="Eliminar producto" class="eliminar-btn">Eliminar</button>
         </div>
 
         <div class="producto-carrito">
             <h3>Lomo a lo Pobre</h3>
             <p><strong>$12.000 CLP</strong></p>
-            <button>Eliminar</button>
+            <button aria-label="Eliminar producto" class="eliminar-btn">Eliminar</button>
         </div>
 
         <div id="total">
@@ -60,7 +61,7 @@
             <input type="radio" id="delivery" name="entrega" value="delivery">
         </div>
 
-        <div id="direccion-delivery">
+        <div id="direccion-delivery" class="hidden">
             <h3>Dirección de Delivery</h3>
             <input type="text" id="direccion" placeholder="Ingresa tu dirección de entrega">
         </div>
@@ -122,6 +123,7 @@
             tarjetaFields.forEach(field => {
                 field.disabled = !enable;
             });
+            document.getElementById('direccion-delivery').classList.toggle('hidden', !enable);
         }
     </script>
 </body>

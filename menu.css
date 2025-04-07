@@ -16,7 +16,6 @@ header {
     background-color: #ffffff;
     color: #333;
     padding: 30px 150px;
-    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -64,25 +63,6 @@ header .carrito-icono img:hover {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    header nav ul {
-        display: block;
-        text-align: center;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    header .carrito-icono {
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        position: absolute;
-        top: 25px;
-        left: 25px;
-    }
-}
 
 .carrito-icono {
     position: absolute;
