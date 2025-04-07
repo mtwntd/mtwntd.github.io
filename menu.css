@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 30px 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: top 0.3s ease-in-out;
+    opacity: 1;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff6f61;
+}
+
+header .carrito-icono img {
+    width: 45px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+header .carrito-icono img:hover {
+    transform: scale(1.1);
+}
+
+
+.carrito-icono {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+#banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: #333;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+#banner h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#banner button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+}
+
+#banner button:hover {
+    background-color: #e55b4a;
+}
+
+#bienvenida {
+    text-align: center;
+    background-color: #fff;
+}
+
+#bienvenida h2 {
+    font-size: 0px;
+    margin-bottom: 20px;
+}
+
+#bienvenida p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#menu {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.categoria {
+    margin-bottom: 50px;
+}
+
+.categoria h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.producto strong {
+    font-size: 18px;
+    color: #ff6f61;
+}
+
+.producto button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #e55b4a;
+}
+
+#promociones {
+    background-color: #ffebcc;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#promociones h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#promociones p {
+    color: #ff6f61;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#promociones p a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#promociones p a:hover {
+    text-decoration: underline;
+    color: #d04b3e;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer .redes-sociales {
+    margin-bottom: 15px;
+}
+
+footer .redes-sociales a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer .redes-sociales a:hover {
+    color: #ff6f61;
+}
+
+footer .ubicacion a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer .ubicacion a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header .logo img {
+        max-width: 120px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    header .carrito-icono {
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        right: 20px;
+        left: auto;
+    }
+
+    #banner h2 {
+        font-size: 1.8em;
+    }
+
+    #banner button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    #bienvenida h2 {
+        font-size: 24px;
+    }
+
+    #bienvenida p {
+        font-size: 16px;
+    }
+
+    .producto {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #menu h2 {
+        font-size: 28px;
+    }
+
+    #promociones h2 {
+        font-size: 28px;
+    }
+
+    #promociones p {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
